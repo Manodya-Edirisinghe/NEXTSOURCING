@@ -20,7 +20,7 @@ const Header = ({ toggleSidebar }) => {
         </Typography>
         
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <Button color="inherit" sx={{ mr: 2 }}>
+          {/* <Button color="inherit" sx={{ mr: 2 }}>
             Manage Suppliers
           </Button>
           <Button color="inherit" sx={{ mr: 2 }}>
@@ -31,7 +31,7 @@ const Header = ({ toggleSidebar }) => {
           </Button>
           <IconButton color="inherit" sx={{ mr: 2 }}>
             <Notifications />
-          </IconButton>
+          </IconButton> */}
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <Typography variant="body2" sx={{ mr: 1 }}>
               Welcome, Inventory Manager!

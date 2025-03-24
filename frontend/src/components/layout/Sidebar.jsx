@@ -66,21 +66,15 @@ const Sidebar = ({ open }) => {
           
           <Collapse in={inventoryOpen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              <ListItemButton sx={{ pl: 4 }}>
-                <ListItemIcon>
-                  <CategoryIcon />
-                </ListItemIcon>
-                <ListItemText primary="Categories" />
-              </ListItemButton>
               
-              <ListItemButton component={Link} to="/inventory" sx={{ pl: 4 }}>
+              <ListItemButton sx={{ pl: 4 }}>
                 <ListItemIcon>
                   <InventoryIcon />
                 </ListItemIcon>
                 <ListItemText primary="Assets" />
               </ListItemButton>
               
-              <ListItemButton sx={{ pl: 4 }}>
+              <ListItemButton component={Link} to="/inventory" sx={{ pl: 4 }}>
                 <ListItemIcon>
                   <ProductsIcon />
                 </ListItemIcon>
@@ -95,13 +89,6 @@ const Sidebar = ({ open }) => {
               </ListItemButton>
             </List>
           </Collapse>
-          
-          <ListItem button>
-            <ListItemIcon>
-              <SearchIcon />
-            </ListItemIcon>
-            <ListItemText primary="Search & Filters" />
-          </ListItem>
           
           <ListItem button>
             <ListItemIcon>

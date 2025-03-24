@@ -1,0 +1,95 @@
+/* Main Container */
+.inventory-container {
+  font-family: "Arial", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto
+}
+
+/* Table Container */
+.inventory-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+}
+
+/* Title */
+.inventory-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 24px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+/* Search & Button Section */
+.search-input {
+  width: 350px;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  display: block;
+  background: #e7e7e7;
+}
+
+/* Add Button */
+.add-button {
+  background-color: #1976d2;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px !important;
+}
+
+.add-button:hover {
+  background-color: #d5d5d5;
+}
+
+/* Table Styling */
+.inventory-table thead {
+  background-color: #f5f5f5;
+}
+
+.inventory-table th, 
+.inventory-table td {
+  padding: 14px;
+  text-align: left;
+  font-size: 16px;
+}
+
+/* Low Stock Warning */
+.low-stock {
+  background-color: orange;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Action Icons */
+.action-icons {
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.action-icons:hover {
+  transform: scale(1.2);
+}
+
+.edit-icon {
+  color: blue;
+  margin-right: 10px;
+}
+
+.delete-icon {
+  color: red;
+}

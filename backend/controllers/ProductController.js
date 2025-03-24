@@ -2,8 +2,8 @@ const Product = require("../models/Products");
 
 const createProduct = async (req, res) => {
     try {
-        const { name, category, price, stock, supplier } = req.body;
-        const product = new Product({ name, category, price, stock, supplier });
+        const { name, price, stock, supplier } = req.body;
+        const product = new Product({ name, price, stock, supplier });
         await product.save();
         res.status(201).json({ message: "Product created successfully!" });
     } catch (error) {
@@ -23,8 +23,8 @@ const getProducts = async (req, res) => {
 const updateProduct = async (req, res) => {
     try {
         const { id } = req.params;
-        const { name, category, price, stock, supplier } = req.body;
-        const product = await Product.findByIdAndUpdate(id, { name, category, price, stock, supplier }, { new: true });
+        const { name, price, stock, supplier } = req.body;
+        const product = await Product.findByIdAndUpdate(id, { name, price, stock, supplier }, { new: true });
         res.json(product);
     } catch (error) {
         res.status(500).json({ error: error.message });
